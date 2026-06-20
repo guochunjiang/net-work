@@ -9,7 +9,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class NetworkApplication {
 
     public static void main(String[] args) {
+        System.out.println("111");
         SpringApplication.run(NetworkApplication.class, args);
+
     }
 
 }

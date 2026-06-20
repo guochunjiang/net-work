@@ -33,7 +33,6 @@ springdoc:
     path: /swagger-ui.html
   api-docs:
     path: /v3/api-docs
-  packages-to-scan: com.network.web.controller
 
 logging:
   level:
