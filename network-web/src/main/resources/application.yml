@@ -8,7 +8,7 @@ spring:
     name: network-api
 
   profiles:
-    active: h2
+    active: mysql
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
@@ -47,9 +47,9 @@ spring:
       on-profile: mysql
 
   datasource:
-    url: jdbc:mysql://localhost:3306/network_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://192.168.0.115:3306/network_db?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: root
+    password: '123456'
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       minimum-idle: 5
@@ -57,3 +57,7 @@ spring:
       idle-timeout: 30000
       max-lifetime: 1800000
       connection-timeout: 30000
+
+  sql:
+    init:
+      mode: never
